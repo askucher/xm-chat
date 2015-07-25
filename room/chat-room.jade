@@ -1,0 +1,61 @@
+#offcanvas-chat.chat-room.offcanvas-pane.style-default-light.width-12(
+         ng:class="{active: enabled}")
+        .offcanvas-head.style-default-bright
+          header.text-primary Chat with Ann Laurens
+          .offcanvas-tools
+            a.btn.btn-icon-toggle.btn-default-light.pull-right(ng:click="closeChat()")
+              i.md.md-close
+            a.btn.btn-icon-toggle.btn-default-light.pull-right.active(ng:click="closeRoom()")
+              i.md.md-arrow-back
+          form.form
+            .form-group.floating-label
+              textarea#sidebarChatMessage.form-control.autosize(name='sidebarChatMessage', rows='1')
+              label(for='sidebarChatMessage') Leave a message
+        .offcanvas-body
+          ul.list-chats
+            li
+              .chat
+                .chat-avatar
+                  img.img-circle(src='https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg', alt='')
+                .chat-body
+                  | Yes, it is indeed very beautiful.
+                  small 10:03 pm
+              // end .chat
+            li.chat-left
+              .chat
+                .chat-avatar
+                  img.img-circle(src='https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg', alt='')
+                .chat-body
+                  | Did you see the changes?
+                  small 10:02 pm
+              // end .chat
+            li
+              .chat
+                .chat-avatar
+                  img.img-circle(src='https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg', alt='')
+                .chat-body
+                  | I just arrived at work, it was quite busy.
+                  small 06:44pm
+                .chat-body
+                  | I will take look in a minute.
+                  small 06:45pm
+              // end .chat
+            li.chat-left
+              .chat
+                .chat-avatar
+                  img.img-circle(src='https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg', alt='')
+                .chat-body
+                  | The colors are much better now.
+                .chat-body
+                  | The colors are brighter than before.
+                  | I have already sent an example.
+                  | This will make it look sharper.
+                  small Mon
+              // end .chat
+            li
+              .chat
+                .chat-avatar
+                  img.img-circle(src='https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg', alt='')
+                .chat-body
+                  | Are the colors of the logo already adapted?
+                  small Last week
